@@ -1221,7 +1221,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #ffff18;
+  background: #8860ff;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -2591,11 +2591,6 @@ ul.breadcrumb li + li:last-child {
 }
 .back-to-top.back-to-top-on {
   margin-top: 16px;
-}
-.site-brand-container {
-  background-image: url("/images/bg.png");
-  background-size: 100% 100%;
-  opacity: 0.9;
 }
 .content-wrap {
   background: initial;
