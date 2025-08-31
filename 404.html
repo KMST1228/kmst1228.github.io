@@ -341,10 +341,10 @@
 
 <div class="copyright">
   
-  &copy; 
+  &copy; 2025-08-30 00:00:00 (UTC+8) – 
   <span itemprop="copyrightYear">2025</span>
   <span class="with-love">
-    <i class="fa fa-heart"></i>
+    <i class="fa fa-home"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">Fei</span>
     <span class="post-meta-divider">|</span>
@@ -367,7 +367,6 @@
 -->
 
 <!-- 网站运行时间的设置 -->
-<span id>Since 2025-08-30</span>
 <span id="timeDate">载入天数...</span>
 <span id="times">载入时分秒...</span>
 <script>
@@ -381,7 +380,7 @@
         mnum = Math.floor(minutes); if(String(mnum).length ==1 ){mnum = "0" + mnum;}
         seconds = (now - grt ) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum);
         snum = Math.round(seconds); if(String(snum).length ==1 ){snum = "0" + snum;}
-        document.getElementById("timeDate").innerHTML = ": "+dnum+" 天 ";
+        document.getElementById("timeDate").innerHTML = "网站已运行 "+dnum+" 天 ";
         document.getElementById("times").innerHTML = hnum + " 小时 " + mnum + " 分 " + snum + " 秒";
         
     }
