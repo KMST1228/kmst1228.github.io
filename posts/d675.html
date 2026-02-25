@@ -19,19 +19,19 @@
     var CONFIG = {"hostname":"kmst1228.github.io","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":true,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.json"};
   </script>
 
-  <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+  <meta name="description" content="基于《Effective Modern C++》的现代cpp学习记录 第一章 类型推导 Deducing Types">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="https://kmst1228.github.io/posts/3eeb.html">
+<meta property="og:title" content="Modern Cpp Learning-1.Deducing Types">
+<meta property="og:url" content="https://kmst1228.github.io/posts/d675.html">
 <meta property="og:site_name" content="My HomePage">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta property="og:description" content="基于《Effective Modern C++》的现代cpp学习记录 第一章 类型推导 Deducing Types">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2025-08-29T16:15:48.364Z">
-<meta property="article:modified_time" content="2025-08-29T18:07:18.102Z">
+<meta property="article:published_time" content="2026-01-03T14:16:46.000Z">
+<meta property="article:modified_time" content="2026-02-25T15:33:15.036Z">
 <meta property="article:author" content="Fei">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="https://kmst1228.github.io/posts/3eeb.html">
+<link rel="canonical" href="https://kmst1228.github.io/posts/d675.html">
 
 
 <script id="page-configurations">
@@ -44,7 +44,7 @@
   };
 </script>
 
-  <title>Hello World | My HomePage</title>
+  <title>Modern Cpp Learning-1.Deducing Types | My HomePage</title>
   
 
 
@@ -190,7 +190,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://kmst1228.github.io/posts/3eeb.html">
+    <link itemprop="mainEntityOfPage" href="https://kmst1228.github.io/posts/d675.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.png">
@@ -203,7 +203,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          Hello World
+          Modern Cpp Learning-1.Deducing Types
         </h1>
 
         <div class="post-meta">
@@ -212,9 +212,24 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              
 
-              <time title="创建时间：2025-08-30 00:15:48 / 修改时间：02:07:18" itemprop="dateCreated datePublished" datetime="2025-08-30T00:15:48+08:00">2025-08-30</time>
+              <time title="创建时间：2026-01-03 22:16:46" itemprop="dateCreated datePublished" datetime="2026-01-03T22:16:46+08:00">2026-01-03</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2026-02-25 23:33:15" itemprop="dateModified" datetime="2026-02-25T23:33:15+08:00">2026-02-25</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E5%AD%A6%E4%B9%A0/" itemprop="url" rel="index"><span itemprop="name">学习</span></a>
+                </span>
             </span>
 
           <br>
@@ -223,7 +238,7 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>431</span>
+              <span>1.6k</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
@@ -242,19 +257,57 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+        <p>基于《Effective Modern C++》的现代cpp学习记录</p>
+<h1 id="第一章-类型推导-Deducing-Types"><a href="#第一章-类型推导-Deducing-Types" class="headerlink" title="第一章 类型推导 Deducing Types"></a>第一章 类型推导 Deducing Types</h1><span id="more"></span>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<h2 id="Base-1-顶层与底层const-很乱，总之是一些对引用和指针能否是常量的要求"><a href="#Base-1-顶层与底层const-很乱，总之是一些对引用和指针能否是常量的要求" class="headerlink" title="Base.1 顶层与底层const(很乱，总之是一些对引用和指针能否是常量的要求)"></a>Base.1 顶层与底层const(很乱，总之是一些对引用和指针能否是常量的要求)</h2><p>已有知识：</p>
+<blockquote>
+<p>C语言指针的使用中，根据<code>const</code>与<code>*</code>的前后关系可将指针分为常量指针(const <type>* p)与指针常量(<type> *const p)，区别在于：常量指针指向常量，无法通过指针改变它指向的变量的值；指针常量则无法改变它指向的地址。</type></type></p>
+</blockquote>
+<p>C语言的赋值过程中，可以将const变量赋给普通变量（不推荐但只会引起警告而不会报错）；而在C++中，根据<code>const</code>与<code>*</code>的前后关系将<code>const</code>修饰符区分为底层（前）与顶层（后），并且对对象（变量也是对象）之间的拷贝操作做了更严格的规范，体现为：</p>
+<p><strong>当执行对象拷贝操作时，常量的顶层const可以忽略，而底层const必须一致</strong></p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">const</span> <span class="type">int</span> a = <span class="number">10</span>;</span><br><span class="line"><span class="type">int</span> b = a; <span class="comment">// ①对于对象a到b的赋值/拷贝操作，const对于对象a来说是顶层const，可以忽略</span></span><br><span class="line"></span><br><span class="line"><span class="type">const</span> <span class="type">int</span> *<span class="type">const</span> p = new <span class="type">int</span>(<span class="number">10</span>);</span><br><span class="line"><span class="comment">// int *p1 = p;</span></span><br><span class="line"><span class="comment">// int *const p2 = p; // ②对于对象p到p1和p2的赋值/拷贝操作，const对于对象p来说是底层const，p1与p2必须与p保持一致</span></span><br><span class="line"><span class="type">const</span> <span class="type">int</span> *p3 = p;</span><br><span class="line"></span><br><span class="line"><span class="comment">// int *p4 = &amp;a;    // ③</span></span><br><span class="line"></span><br><span class="line"><span class="type">const</span> <span class="type">int</span> &amp;r1 = <span class="number">10</span>;</span><br><span class="line"><span class="comment">// int &amp;r2 = a;        // ④</span></span><br><span class="line"><span class="comment">// int &amp;r3 = r1;</span></span><br></pre></td></tr></table></figure>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+<p>上述代码块的示例中，分别从变量对象、指针对象、引用对象的赋值及拷贝操作，解释了上述规范的意义：</p>
+<ol>
+<li>变量a到b的赋值&#x2F;拷贝操作，const对于对象a来说是顶层const，可以忽略：<strong>可以从常量对象赋值到任意对象</strong>。</li>
+<li>指针对象p到p1和p2的赋值&#x2F;拷贝操作，const对于对象p来说是底层const，p1与p2必须与p保持一致：<strong>指针对象的赋值与拷贝必须保持底层const不变</strong></li>
+<li>变量a到指针对象p4的赋值&#x2F;拷贝操作，const对于对象a是顶层const，而<strong>对于对象p4是底层const，因此必须保持一致</strong></li>
+<li>引用的赋值&#x2F;拷贝操作，<code>=</code>右侧是否有const比左侧更宽松（右侧有const时左侧必须有const，左侧有const时右侧可以没有）</li>
+</ol>
+<h2 id="Base-2-值类型与右值引用"><a href="#Base-2-值类型与右值引用" class="headerlink" title="Base.2 值类型与右值引用"></a>Base.2 值类型与右值引用</h2><h3 id="函数返回值的拷贝操作"><a href="#函数返回值的拷贝操作" class="headerlink" title="函数返回值的拷贝操作"></a>函数返回值的拷贝操作</h3><blockquote>
+<p>int x &#x3D; func();</p>
+</blockquote>
+<p>这个语句中出现了两次内存拷贝(1.从func内部到储存函数返回值的eax寄存器；2.从eax寄存器到x)</p>
+<h3 id="C-98的表达式类型"><a href="#C-98的表达式类型" class="headerlink" title="C++98的表达式类型"></a>C++98的表达式类型</h3><ol>
+<li>左值：指向特定内存的具体对象</li>
+<li>右值：临时对象(函数返回值);字符串以外的字面量</li>
+</ol>
+<blockquote>
+<p>x++的递增操作会将原始值储存在寄存器中，相对的++x是直接在原内存上进行递增</p>
+</blockquote>
+<p>根本区别：是否可取地址</p>
+<h3 id="C-11的表达式类型"><a href="#C-11的表达式类型" class="headerlink" title="C++11的表达式类型(???)"></a>C++11的表达式类型(???)</h3><p>左值、将亡值、纯右值</p>
+<h3 id="赋值操作只能通过拷贝吗？"><a href="#赋值操作只能通过拷贝吗？" class="headerlink" title="赋值操作只能通过拷贝吗？"></a>赋值操作只能通过拷贝吗？</h3><ol>
+<li>拷贝</li>
+<li>引用</li>
+<li>移动</li>
+</ol>
+<h3 id="右值引用与移动语义"><a href="#右值引用与移动语义" class="headerlink" title="右值引用与移动语义"></a>右值引用与移动语义</h3><p>&amp; -&gt;  左值引用</p>
+<p>&amp;&amp; -&gt; 右值引用</p>
+<p>左值引用不接受右值赋值，所以出现了只接受右值的右值引用Type &amp;&amp;</p>
+<p>移动语义std::move可以将左值转化为右值(将亡值)</p>
+<blockquote>
+<p>一个类如果实现了拷贝构造(左值引用)与移动构造(右值引用的构造方式)，则对该类的临时变量对象进行拷贝时，会自动调用移动构造</p>
+</blockquote>
+<h3 id="如何得到将亡值"><a href="#如何得到将亡值" class="headerlink" title="如何得到将亡值"></a>如何得到将亡值</h3><ol>
+<li><p>将泛左值转化为将亡值</p>
+<p> a. static_cast&lt;type&amp;&amp;&gt; 强制类型转换</p>
+<p> b. std::move 移动语义</p>
+</li>
+<li><p>临时量实质化(C++17)(暂时不管)</p>
+</li>
+</ol>
 
     </div>
 
@@ -269,11 +322,11 @@
 
         
     <div class="post-nav">
-      <div class="post-nav-item"></div>
       <div class="post-nav-item">
-    <a href="/posts/2431.html" rel="next" title="初次见面">
-      初次见面 <i class="fa fa-chevron-right"></i>
+    <a href="/posts/4ecb.html" rel="prev" title="CMake学习记录">
+      <i class="fa fa-chevron-left"></i> CMake学习记录
     </a></div>
+      <div class="post-nav-item"></div>
     </div>
       </footer>
     
@@ -332,7 +385,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Quick-Start"><span class="nav-number">1.</span> <span class="nav-text">Quick Start</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Create-a-new-post"><span class="nav-number">1.1.</span> <span class="nav-text">Create a new post</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Run-server"><span class="nav-number">1.2.</span> <span class="nav-text">Run server</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Generate-static-files"><span class="nav-number">1.3.</span> <span class="nav-text">Generate static files</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Deploy-to-remote-sites"><span class="nav-number">1.4.</span> <span class="nav-text">Deploy to remote sites</span></a></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%AC%AC%E4%B8%80%E7%AB%A0-%E7%B1%BB%E5%9E%8B%E6%8E%A8%E5%AF%BC-Deducing-Types"><span class="nav-number">1.</span> <span class="nav-text">第一章 类型推导 Deducing Types</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Base-1-%E9%A1%B6%E5%B1%82%E4%B8%8E%E5%BA%95%E5%B1%82const-%E5%BE%88%E4%B9%B1%EF%BC%8C%E6%80%BB%E4%B9%8B%E6%98%AF%E4%B8%80%E4%BA%9B%E5%AF%B9%E5%BC%95%E7%94%A8%E5%92%8C%E6%8C%87%E9%92%88%E8%83%BD%E5%90%A6%E6%98%AF%E5%B8%B8%E9%87%8F%E7%9A%84%E8%A6%81%E6%B1%82"><span class="nav-number">1.1.</span> <span class="nav-text">Base.1 顶层与底层const(很乱，总之是一些对引用和指针能否是常量的要求)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Base-2-%E5%80%BC%E7%B1%BB%E5%9E%8B%E4%B8%8E%E5%8F%B3%E5%80%BC%E5%BC%95%E7%94%A8"><span class="nav-number">1.2.</span> <span class="nav-text">Base.2 值类型与右值引用</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%87%BD%E6%95%B0%E8%BF%94%E5%9B%9E%E5%80%BC%E7%9A%84%E6%8B%B7%E8%B4%9D%E6%93%8D%E4%BD%9C"><span class="nav-number">1.2.1.</span> <span class="nav-text">函数返回值的拷贝操作</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#C-98%E7%9A%84%E8%A1%A8%E8%BE%BE%E5%BC%8F%E7%B1%BB%E5%9E%8B"><span class="nav-number">1.2.2.</span> <span class="nav-text">C++98的表达式类型</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#C-11%E7%9A%84%E8%A1%A8%E8%BE%BE%E5%BC%8F%E7%B1%BB%E5%9E%8B"><span class="nav-number">1.2.3.</span> <span class="nav-text">C++11的表达式类型(???)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%B5%8B%E5%80%BC%E6%93%8D%E4%BD%9C%E5%8F%AA%E8%83%BD%E9%80%9A%E8%BF%87%E6%8B%B7%E8%B4%9D%E5%90%97%EF%BC%9F"><span class="nav-number">1.2.4.</span> <span class="nav-text">赋值操作只能通过拷贝吗？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%8F%B3%E5%80%BC%E5%BC%95%E7%94%A8%E4%B8%8E%E7%A7%BB%E5%8A%A8%E8%AF%AD%E4%B9%89"><span class="nav-number">1.2.5.</span> <span class="nav-text">右值引用与移动语义</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%A6%82%E4%BD%95%E5%BE%97%E5%88%B0%E5%B0%86%E4%BA%A1%E5%80%BC"><span class="nav-number">1.2.6.</span> <span class="nav-text">如何得到将亡值</span></a></li></ol></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
